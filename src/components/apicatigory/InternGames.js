@@ -9,8 +9,8 @@ import { Link } from 'react-router-dom'
 const InternGames = ({games}) => {
   const ListGames = games.map((item)=>{
     return ( 
-    <Link to={`/game${item.id}`}   >
-    <div key={item.id}>
+    <Link to={`/game${item.id}`} key={item.id}   >
+    <div >
       <div className='img'>
        <img src={play1}/>
       </div>
@@ -22,7 +22,7 @@ const InternGames = ({games}) => {
    return (
      <BestStyle>
          <TitleHome/>
- <div className='item-game'>
+ <div className='item-game' >
    
    {ListGames}
  </div>

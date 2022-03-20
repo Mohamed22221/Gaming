@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import catigory from '../../img/catogry.jpg'
 const Categorys = () => {
@@ -8,7 +8,7 @@ const Categorys = () => {
         <h1>CATEGORYS</h1>
         
         <div className='all-categorys'>
-            <NavLink to="/bestgames">
+            <Link to="/bestgames">
             <div className='item-catigory'>
                 <div className='img-catigory'>
                  <img src={catigory}/>
@@ -21,8 +21,8 @@ const Categorys = () => {
                 </div>
 
             </div>
-            </NavLink>
-            <NavLink to="/kuitegames">
+            </Link>
+            <Link to="/kuitegames">
             <div className='item-catigory'>
                 <div className='img-catigory'>
                  <img src={catigory}/>
@@ -35,8 +35,8 @@ const Categorys = () => {
                 </div>
 
             </div>
-            </NavLink>
-            <NavLink to="/khalegames">
+            </Link>
+            <Link to="/khalegames">
             <div className='item-catigory'>
                 <div className='img-catigory'>
                  <img src={catigory}/>
@@ -49,8 +49,8 @@ const Categorys = () => {
                 </div>
 
             </div>
-            </NavLink>
-            <NavLink to="/famousgames">
+            </Link>
+            <Link to="/famousgames">
             <div className='item-catigory'>
                 <div className='img-catigory'>
                  <img src={catigory}/>
@@ -63,8 +63,8 @@ const Categorys = () => {
                 </div>
 
             </div>
-            </NavLink>
-            <NavLink to="/nationalgames">
+            </Link>
+            <Link to="/nationalgames">
             <div className='item-catigory'>
                 <div className='img-catigory'>
                  <img src={catigory}/>
@@ -77,9 +77,9 @@ const Categorys = () => {
                 </div>
 
             </div>
-            </NavLink>
+            </Link>
 
-            <NavLink to="/othergames">
+            <Link to="/othergames">
             <div className='item-catigory'>
                 <div className='img-catigory'>
                  <img src={catigory}/>
@@ -92,8 +92,8 @@ const Categorys = () => {
                 </div>
 
             </div>
-            </NavLink>
-            <NavLink to="/kidsgames">
+            </Link>
+            <Link to="/kidsgames">
             <div className='item-catigory'>
                 <div className='img-catigory'>
                  <img src={catigory}/>
@@ -106,7 +106,7 @@ const Categorys = () => {
                 </div>
 
             </div>
-            </NavLink>
+            </Link>
 
 
         </div>

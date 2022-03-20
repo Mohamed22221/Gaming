@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 const OtherGames = ({games}) => {
   const ListGames = games.map((item)=>{
     return ( 
-    <Link to={`/game${item.id}`}   >
+    <Link to={`/game${item.id}`}  key={item.id}   >
     <div key={item.id}>
       <div className='img'>
        <img src={play1}/>

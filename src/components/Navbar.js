@@ -2,27 +2,27 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 import TranslateIcon from '@mui/icons-material/Translate';
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <Nav>
-      <NavLink to="/Gaming">
-      <Logo href="">
-        GAMING<span></span>
+      
+      <Logo>
+       <Link to="/Gaming" className="logo"> GAMING<span></span></Link>
       </Logo>
-      </NavLink>
+      
       <Hamburger onClick={() => setIsOpen(!isOpen)}>
         <span />
         <span />
         <span />
       </Hamburger>
       <Menu isOpen={isOpen}>
-        <MenuLink><NavLink to="/Gaming"  onClick={() => setIsOpen(!isOpen)}>Dashboard</NavLink></MenuLink>
-        <MenuLink href="">Branches</MenuLink>
-        <MenuLink href="">AboutUs</MenuLink>
-        <MenuLink href=""><LocalGroceryStoreIcon/></MenuLink>
-        <MenuLink href="">EN<TranslateIcon/></MenuLink>
+        <MenuLink><Link to="/Gaming"  onClick={() => setIsOpen(!isOpen)}>Dashboard</Link></MenuLink>
+        <MenuLink>Branches</MenuLink>
+        <MenuLink>AboutUs</MenuLink>
+        <MenuLink><LocalGroceryStoreIcon/></MenuLink>
+        <MenuLink>EN<TranslateIcon/></MenuLink>
       </Menu>
     </Nav>
   );
@@ -62,7 +62,9 @@ const Nav = styled.div`
 `;
 
 const Logo = styled.a`
-  padding: 1rem 30px;
+padding: 10px 0;
+.logo{
+    padding: 1rem 30px;
   color: white  ;
   text-decoration: none;
   font-weight: 800;
@@ -71,6 +73,8 @@ const Logo = styled.a`
     font-weight: 300;
     font-size: 1.3rem;
   }
+}
+
 `;
 
 const Menu = styled.div`
