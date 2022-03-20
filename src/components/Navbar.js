@@ -7,9 +7,11 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <Nav>
+      <NavLink to="/Gaming">
       <Logo href="">
         GAMING<span></span>
       </Logo>
+      </NavLink>
       <Hamburger onClick={() => setIsOpen(!isOpen)}>
         <span />
         <span />
