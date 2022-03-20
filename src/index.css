@@ -5,6 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+
+}
+.example::-webkit-scrollbar {
+  display: none;
 }
 
 code {
