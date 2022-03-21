@@ -66,7 +66,7 @@ flex: 3;
       position: absolute;
     left: 0;
     text-align: center;
-    top: 20%;
+    top: 150px;
     width: 100%;
     font-size: 30px;
     color:white;
