@@ -40,7 +40,16 @@ flex: 3;
         position: absolute;
         img{ 
       width: 100%;
-      height: 37vh;
+      height: 350px;
+        }
+      }
+
+}
+@media (max-width:500px ) 
+{
+      .img{
+        img{ 
+      height: 290px;
         }
       }
 
