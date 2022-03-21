@@ -20,12 +20,11 @@ const options = {
       useEffect(()=>{
         axios.request(options).then((res)=>{
             setGameId(res.data)
-            console.log(res.data)
         })
-      },[])
+      },[setGameId])
   return (
     <IdStyle>
-        <TitleHome/>
+        
     <div className="about-item">
         <div className='img'>
             <img src={gameimage}/>

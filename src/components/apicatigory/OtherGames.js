@@ -19,7 +19,7 @@ const OtherGames = ({games}) => {
   })
    return (
      <BestStyle>
-         <TitleHome/>
+         <TitleHome games={games}/>
  <div className='item-game'>
    
    {ListGames}

@@ -19,7 +19,6 @@ import KuwaitiGames from './components/apicatigory/KuwaitiGames';
 function App() {
   {/*api games*/}
   const [games , setGames] = useState([])
-
   const options = {
     method: 'GET',
     url: 'https://free-to-play-games-database.p.rapidapi.com/api/games?id=452',
@@ -43,8 +42,8 @@ useEffect(()=>{
       <Routes>
         
         {/*go to pages*/} 
-        <Route path="/" element={ <Home />} /> 
-        <Route path="/Gaming" element={ <Home/>} />
+        <Route path="/" element={ <Home games={games} />} /> 
+        <Route path="/Gaming" element={ <Home games={games}/>} />
         {/*go to categorys*/} 
         <Route path="/bestgames/" element={<BestGames games={games}/>} />
         <Route path="/famousgames/" element={<FamoGames games={games}/>} />

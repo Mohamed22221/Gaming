@@ -2,10 +2,13 @@ import React from 'react'
 import styled from 'styled-components';
 import Categorys from '../components/home/Categorys';
 import TitleHome from '../components/home/TitleHome';
-const Home = () => {
+const Home = ({games}) => {
   return (
     <HomeStyle>
-      <TitleHome/>
+      <TitleHome 
+       games={games}
+       placeholder="Search Here.." 
+       />
       <Categorys/>
 
     </HomeStyle>
